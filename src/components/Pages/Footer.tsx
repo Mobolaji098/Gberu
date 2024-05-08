@@ -33,14 +33,14 @@ export default function Footer() {
         </a>
       </div>
       <p className="text-white px-16 font-bold text-xl"> Contact our customer support</p>
-      <div className="flex flex-col lg:flex-row justify-between p-16 gap-8">
+      <div className="flex flex-col lg:flex-row justify-between md:p-16 gap-8 p-6">
         <FooterList title='Services' body= {bodys[0]} />
         <FooterList title='Features' body={bodys[1]}/>
         <FooterList title='Company' body={bodys[2]}/>
       </div>
       <div className="flex gap-6 lg:flex-row flex-col">
-        <p className="text-white px-16 text-xl">C 2024 All rights reserved </p>
-        <div className="flex gap-2 pl-16 lg:p-0">
+        <p className="text-white md:px-16 text-xl px-6">C 2024 All rights reserved </p>
+        <div className="flex gap-2 md:pl-16 lg:p-0 pl-6">
 
         <FooterIcons imageurl={socials.instagram.imageurl} link={socials.instagram.link}/>
         <FooterIcons imageurl={socials.apple.imageurl} link={socials.apple.link}/>
