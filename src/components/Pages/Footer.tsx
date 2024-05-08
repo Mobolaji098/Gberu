@@ -32,7 +32,7 @@ export default function Footer() {
           />
         </a>
       </div>
-      <p className="text-white px-16 font-bold text-xl"> Contact our customer support</p>
+      <p className="text-white md:px-16 font-bold text-xl px-6"> Contact our customer support</p>
       <div className="flex flex-col lg:flex-row justify-between md:p-16 gap-8 p-6">
         <FooterList title='Services' body= {bodys[0]} />
         <FooterList title='Features' body={bodys[1]}/>
