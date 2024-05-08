@@ -18,6 +18,13 @@ export const metadata: Metadata = {
   description: "Revolutionary Logistics Application",
 };
 
+import type { Viewport } from 'next'
+ 
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+}
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -25,6 +32,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+      
+
       <body className={montserrat.className}>
       <ThemeProvider attribute="class"
             defaultTheme="system"
