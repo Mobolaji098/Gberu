@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function Page5() {
   return (
-    <div className={`relative  flex flex-col justify-center bg-white dark:bg-black py-16 items-center lg:min-w-[1281px] md:min-w-[780px] min-w-[580px]`}>
+    <div className={`relative  flex flex-col justify-center bg-white dark:bg-black py-16 items-center lg:min-w-[1281px] md:min-w-[780px] `}>
       <div className="flex justify-center items-center">
       <Image
         className=" z-20 lg:absolute  lg:block hidden left-0 bottom-48 translate-x-64"
@@ -35,7 +35,7 @@ export default function Page5() {
       </h1>
      
       <div className="flex justify-center items-center">
-        <span className="lg:text-[1.875rem] text-black dark:text-white leading-7 md:text-[1.5rem] text-[1rem] p-8">Placing and delivering orders has never been easier.
+        <span className="lg:text-[1.875rem] text-black dark:text-white leading-7 md:text-[1.5rem] text-[1rem] p-8 text-center">Placing and delivering orders has never been easier.
         </span>
       </div>
       <div className="flex relative flex-col justify-center items-center lg:justify-end lg:items-end w-full lg:p-[4rem] gap-8">

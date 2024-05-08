@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Page6() {
   return (
-    <div className="flex flex-col bg-white dark:bg-black py-16 items-center lg:min-w-[1281px] md:min-w-[780px] min-w-[580px]">
+    <div className="flex flex-col bg-white dark:bg-black py-16 items-center lg:min-w-[1281px] md:min-w-[780px] ">
       <div className="bg-black py-10 flex flex-col justify-center rounded-2xl mx-48 w-11/12 ">
       <h1 className={`flex lg:text-4xl text-3xl text-white  items-center justify-center md:px-12`}>
         <span className="font-black p-2 text-center"> Reasons to stick with us </span>

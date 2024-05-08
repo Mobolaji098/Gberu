@@ -5,7 +5,7 @@ import { ButtonColored, ButtonNoOutline } from "../ui/Button";
 
 export default function Page2() {
   return (
-    <div className="flex p-6  flex-col md:flex-row bg-black  md:px-[68px] md:min-w-[780px] relative lg:min-w-[1281px] overflow-hidden min-w-[580px]">
+    <div className="flex p-6  flex-col md:flex-row bg-black  md:px-[68px] md:min-w-[780px] relative lg:min-w-[1281px] overflow-hidden">
       <div className="flex h-auto items-center justify-center ">
         <Image
           className=" "

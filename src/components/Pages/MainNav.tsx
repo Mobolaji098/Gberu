@@ -21,7 +21,7 @@ export default function MainNav( {lscreen,Theme,SetTheme}:MainNavProps) {
   // Determine the image source based on the current theme
   const imagePath = Theme === 'dark' ? darkImagePath : lightImagePath;
   return (
-    <div className={` flex flex-rol h-[56px] lg:px-8  items-center justify-between py-10  dark:bg-black bg-[#F9F9F9] flex-grow  lg:min-w-[1281px] overflow-hidden md:min-w-[780px] min-w-[580px]`}>
+    <div className={` flex flex-rol h-[56px] lg:px-8  items-center justify-between py-10  dark:bg-black bg-[#F9F9F9] flex-grow  lg:min-w-[1281px] overflow-hidden md:min-w-[780px] `}>
       <div className="flex gap-12">
       <div className="items-start">
         <a  href='./'>

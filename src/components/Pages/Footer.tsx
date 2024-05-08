@@ -21,7 +21,7 @@ export default function Footer() {
     playstor:{imageurl:'/playstor.png',link:'https://www.playstor'},twitter:{imageurl:'/twitter.png',link:'https://www.twitter.com'},
     facebook:{imageurl:'/facebook.png',link:'https://www.facebook.com'},whatsapp:{imageurl:'/whatsapp.png',link:'https://www.whatsapp.com'}}
   return (
-    <div className="flex flex-col bg-black pb-24 lg:min-w-[1281px] md:min-w-[780px] min-w-[580px]">
+    <div className="flex flex-col bg-black pb-24 lg:min-w-[1281px] md:min-w-[780px] ">
       <div className="items-start px-10">
         <a href="./">
           <Image

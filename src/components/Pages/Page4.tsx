@@ -13,7 +13,7 @@ export default function Page3() {
       ];
 
   return (
-    <div className="relative  flex flex-col justify-center  bg-red-500 xl:px-12 py-10 items-center lg:min-w-[1281px] md:min-w-[780px] min-w-[580px]">
+    <div className="relative  flex flex-col justify-center  bg-red-500 xl:px-12 py-10 items-center lg:min-w-[1281px] md:min-w-[780px] ">
       <h1 className="flex text-5xl text-white  items-center justify-center ">
         <span className="font-black"> Our Services </span>
       </h1>
