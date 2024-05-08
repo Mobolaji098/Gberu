@@ -5,7 +5,7 @@ import { ButtonColored } from "../ui/Button";
 export default function Page1() {
 
   return (
-    <div className={`flex flex-col min-h-screen  bg-white dark:bg-black lg:min-w-[1281px] overflow-hidden px-12 py-10 relative lg:pb-[20rem] md:min-w-[780px] `}>
+    <div className={`flex flex-col  bg-white dark:bg-black lg:min-w-[1281px] overflow-hidden px-12 py-10 relative lg:pb-[20rem] md:min-w-[780px] `}>
         <div className="flex justify-center items-center">
       <Image
         className=" lg:absolute lg:top-10 lg:right-40 lg:ml-8 lg:translate-x-0 "
