@@ -27,7 +27,7 @@ export default function MainNav({ lscreen, Theme, SetTheme }: MainNavProps) {
   // Determine the image source based on the current theme
   const imagePath = Theme === "dark" ? darkImagePath : lightImagePath;
   return (
-    <div className="dark:bg-black bg-[#F9F9F9] absolute top-0 w-full ">
+    <div className="dark:bg-black bg-[#F9F9F9] fixed top-0 w-full z-20">
       <div
         className={` flex flex-rol h-[5rem]  m-auto flex-none  w-full lg:max-w-[1200px] items-center justify-center max-w-[750px] `}
       >
@@ -175,7 +175,7 @@ interface menuProps {
 }
 function MenuList({ menus }: menuProps) {
   return (
-    <div className="z-50 absolute pt-24 bg-white dark:bg-black flex flex-col p-5 h-screen w-full m-auto items-center ">
+    <div className="z-50  pt-24 bg-white dark:bg-black flex flex-col p-5 h-screen w-full m-auto items-center fixed ">
       {menus.map((menu) => {
         return (
           <div>
