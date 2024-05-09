@@ -21,9 +21,31 @@ export default function Page1() {
           Gberu is your handy courier service app. Your worries are over as your
           good would be delivered safely and on time.
         </p>
-        <ButtonColored className="mt-10 text-white text-sm bg-red-600 rounded-r-lg w-[225px] h-[54px] ">
-          Download the app
+        <div className="flex gap-4">
+        <ButtonColored className="mt-10  text-white bg-black dark:bg-red-500 rounded-r-lg w-[160px] h-[54px] ">
+          <div className="flex justify-center items-center gap-2">
+            <img
+             className="w-[20px] "
+             src="/whiteAppleLogo.svg"
+             alt="Logistics picture"
+             />
+          <p>Get on iPhone</p>
+          </div>
+          
         </ButtonColored>
+        <ButtonColored className="mt-10 dark:text-black text-white bg-black dark:bg-white  rounded-r-lg w-[160px] h-[54px] ">
+          <div className="flex justify-center items-center gap-2">
+            <img
+             className="w-[20px]"
+             src="/google-icon.svg"
+             alt="Logistics picture"
+             />
+          <p className="">Get on Android</p>
+          </div>
+          
+        </ButtonColored>
+        </div>
+        
       </div>
       <div className="flex justify-center items-center pt-10">
       <img

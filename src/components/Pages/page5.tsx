@@ -48,22 +48,30 @@ export default function Page5() {
         Download Gberu Driver/Rider app
         </ButtonColored>
     <p className="lg:text-3xl md:text-2xl text-black dark:text-white max-w-[535px] text-center lg:text-right"> Available on iOS and Android devices </p>
-    <div className="mt-[-2rem]">
-    <Image
-        className=" "
-        src="/googlePlay.png"
-        width={201}
-        height={45}
-        alt="Logistics picture"
-      />
-      <Image
-        className=" mt-[-3rem]"
-        src="/appStore.png"
-        width={201}
-        height={87}
-        alt="Logistics picture"
-      />
-      </div>
+    <div className="flex gap-4">
+        <ButtonColored className="mt-10  text-white bg-black dark:bg-red-500 rounded-r-lg w-[160px] h-[54px] ">
+          <div className="flex justify-center items-center gap-2">
+            <img
+             className="w-[20px] "
+             src="/whiteAppleLogo.svg"
+             alt="Logistics picture"
+             />
+          <p>Get on iPhone</p>
+          </div>
+          
+        </ButtonColored>
+        <ButtonColored className="mt-10 dark:text-black text-white bg-black dark:bg-white  rounded-r-lg w-[160px] h-[54px] ">
+          <div className="flex justify-center items-center gap-2">
+            <img
+             className="w-[20px]"
+             src="/google-icon.svg"
+             alt="Logistics picture"
+             />
+          <p className="">Get on Android</p>
+          </div>
+          
+        </ButtonColored>
+        </div>
       </div>
     </div>
     </div>
