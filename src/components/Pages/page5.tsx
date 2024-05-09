@@ -44,7 +44,7 @@ export default function Page5() {
       <ButtonColored className=" flex text-white font-semibold bg-red-500 lg:rounded-2xl lg:px-10 h-[5rem] text-[1.5rem] md:mx-16 lg:mx-0 tracking-wider w-full lg:w-auto">
       Download Gberu Courier app
         </ButtonColored>
-        <ButtonColored className=" flex text-white font-semibold bg-black dark:bg-white dark:text-black lg:rounded-2xl h-[5rem] text-[1.5rem] md:mx-16 lg:mx-0 lg:w-auto w-full lg:px-10 tracking-wider">
+        <ButtonColored className=" flex text-white font-semibold bg-black   lg:rounded-2xl h-[5rem] text-[1.5rem] md:mx-16 lg:mx-0 lg:w-auto w-full lg:px-10 tracking-wider">
         Download Gberu Driver/Rider app
         </ButtonColored>
     <p className="lg:text-3xl md:text-2xl text-black dark:text-white max-w-[535px] text-center lg:text-right"> Available on iOS and Android devices </p>
