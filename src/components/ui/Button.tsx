@@ -32,7 +32,7 @@ export function ButtonNoOutline<T extends React.ElementType = "button">({
       <Component
         {...props}
         className={twMerge(
-          "h-12  flex  gap-2 rounded-md p-[0.85rem]",
+          " flex ",
           props.className
         )}
       />

@@ -13,12 +13,13 @@ export default function Page3() {
       ];
 
   return (
-    <div className="relative  flex flex-col justify-center  bg-red-500 xl:px-12 py-10 items-center lg:min-w-[1281px] md:min-w-[780px] ">
+    <div className="bg-red-500">
+    <div className="relative  flex flex-col justify-center  bg-red-500 xl:px-12 py-10 items-center max-w-[750px] lg:max-w-[1300px] w-full m-auto">
       <h1 className="flex text-5xl text-white  items-center justify-center ">
         <span className="font-black"> Our Services </span>
       </h1>
       <div className="flex justify-center items-center">
-        <span className="lg:text-[1.5rem] p-8 text-white leading-5 text-center md:text-[1rem]">
+        <span className=" p-8 text-white leading-5 text-center md:text-[1rem]">
           {" "}
           Whatever you need, experience more courier and logistics option on the
           app
@@ -33,6 +34,7 @@ export default function Page3() {
         <Ourservicebox word='VIP Courier service' images =  {serviceImages[4]}/>
         <Ourservicebox word='Groceries shopping' images = {serviceImages[5]}/>
 
+        </div>
         </div>
       </div>
   );

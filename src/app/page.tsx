@@ -19,7 +19,7 @@ export default function Home() {
   const { theme,setTheme } = useTheme();
   
   return (
-    <main className="flex min-h-screen flex-col ">
+    <main className="flex min-h-screen justify-center flex-col overflow-hidden ">
       <MainNav  lscreen={isLargeScreen} Theme={theme} SetTheme={setTheme}/>
       <Page1/>
       <Page2  />

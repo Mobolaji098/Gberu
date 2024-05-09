@@ -2,7 +2,8 @@ import Image from "next/image";
 
 export default function Page6() {
   return (
-    <div className="flex flex-col bg-white dark:bg-black py-16 items-center lg:min-w-[1281px] md:min-w-[780px] ">
+    <div className="bg-white dark:bg-black">
+    <div className="flex flex-col py-16 items-center max-w-[750px] lg:max-w-[1300px] w-full m-auto ">
       <div className="bg-black py-10 flex flex-col justify-center rounded-2xl mx-48 w-11/12 ">
       <h1 className={`flex lg:text-4xl text-3xl text-white  items-center justify-center md:px-12`}>
         <span className="font-black p-2 text-center"> Reasons to stick with us </span>
@@ -16,6 +17,7 @@ export default function Page6() {
         <Stickwithus word="24/7 Customer support" images='/interface-help-customer-support.png'/>
 
 
+      </div>
       </div>
       </div>
     </div>
@@ -39,7 +41,7 @@ function Stickwithus({word,images}:StickwithusProps) {
           alt="Our service"
         />
         </div>
-      <div className="my-4 font-light ">{word}</div> 
+      <div className="my-4 text-center font-light ">{word}</div> 
     
    
         </div>

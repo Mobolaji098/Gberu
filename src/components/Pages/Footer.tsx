@@ -21,7 +21,8 @@ export default function Footer() {
     playstor:{imageurl:'/playstor.png',link:'https://www.playstor'},twitter:{imageurl:'/twitter.png',link:'https://www.twitter.com'},
     facebook:{imageurl:'/facebook.png',link:'https://www.facebook.com'},whatsapp:{imageurl:'/whatsapp.png',link:'https://www.whatsapp.com'}}
   return (
-    <div className="flex flex-col bg-black pb-24 lg:min-w-[1281px] md:min-w-[780px] ">
+    <div className="bg-black">
+    <div className="flex flex-col bg-black pb-24 max-w-[750px] lg:max-w-[1300px] w-full m-auto ">
       <div className="items-start px-10">
         <a href="./">
           <Image
@@ -39,7 +40,7 @@ export default function Footer() {
         <FooterList title='Company' body={bodys[2]}/>
       </div>
       <div className="flex gap-6 lg:flex-row flex-col">
-        <p className="text-white md:px-16 text-xl px-6">C 2024 All rights reserved </p>
+        <p className="text-white md:px-16 px-6">C 2024 All rights reserved </p>
         <div className="flex gap-2 md:pl-16 lg:p-0 pl-6">
 
         <FooterIcons imageurl={socials.instagram.imageurl} link={socials.instagram.link}/>
@@ -52,6 +53,7 @@ export default function Footer() {
         <FooterIcons imageurl={socials.whatsapp.imageurl} link={socials.whatsapp.link}/>
         </div>
       </div>
+    </div>
     </div>
   );
 }
