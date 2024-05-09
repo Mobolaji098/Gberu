@@ -29,7 +29,7 @@ export default function MainNav({ lscreen, Theme, SetTheme }: MainNavProps) {
   return (
     <div className="dark:bg-black bg-[#F9F9F9] fixed top-0 w-full z-20">
       <div
-        className={` flex flex-rol h-[5rem]  m-auto flex-none  w-full lg:max-w-[1200px] items-center justify-center max-w-[750px] `}
+        className={` flex flex-rol h-[4rem]  m-auto flex-none  w-full lg:max-w-[1200px] items-center justify-center max-w-[750px] `}
       >
         <div className="flex ">
           <div className="items-start">
