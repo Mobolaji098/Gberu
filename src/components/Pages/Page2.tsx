@@ -10,8 +10,8 @@ export default function Page2() {
       <div className="flex h-auto items-center justify-center ">
         <Image
           className=" "
-          src="/gberuPhoneScreenshot.png"
-          width={314}
+          src="/552shots_so.png"
+          width={400}
           height={600}
           alt="Phone Mockup"
         />
