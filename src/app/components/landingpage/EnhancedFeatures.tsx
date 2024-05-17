@@ -18,7 +18,7 @@ export default function EnhancedFeatures() {
       <h1 className={`flex dark:text-white  items-center justify-center `}>
         <span className=" font-semibold  p-2 text-center "> Enhance Features </span>
       </h1>
-      <h2 className={`lg:font-black lg:text-6xl md:text-4xl text-3xl flex dark:text-white  items-center justify-center my-8`}>
+      <h2 className={`lg:font-black lg:text-6xl md:text-4xl text-3xl flex dark:text-white  items-center justify-center text-center mx-3 my-8`}>
       We understand your needs </h2>
       <div className="flex gap-7 my-10 justify-center items-center flex-wrap ">
         <div className=" text-white font-semibold bg-red-500 rounded-2xl w-[500px] h-[500px] px-10 py-12 relative overflow-hidden">

@@ -3,7 +3,7 @@ import WaitingListforms from "../forms/waitingListforms";
 export default function ComingSoon() {
 
   return (
-    <div className="bg-white dark:bg-black flex justify-center min-h-screen">
+    <div className="bg-white dark:bg-black flex justify-center min-h-screen py-20">
         <div className="flex flex-col max-w-[700px] w-full justify-center items-center">
         <img
              className="w-[200px]"
