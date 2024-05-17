@@ -102,7 +102,7 @@ const handleSelect = (e:SelectEvent) => {
   }
 
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col px-5">
 
       <SuccessModal header={"Submission Successful"} body={"Thank you for submission. You would be contacted once we are live"}
       show={isModalOpen} close={closeModal}/>
