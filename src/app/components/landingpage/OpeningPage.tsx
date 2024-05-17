@@ -5,8 +5,8 @@ import { ButtonColored } from "../ui/Button";
 export default function Page1() {
 
   return (
-    <div className="bg-white dark:bg-black ">
-    <div className={`flex flex-col px-12 relative lg:max-w-[1300px] max-w-[750px] w-full m-auto lg:mx-20 mt-7 lg:mb-32  `}>
+    <div className="bg-white dark:bg-black flex justify-center ">
+    <div className={`flex flex-col px-12 relative lg:max-w-[1300px] max-w-[750px] w-full m-auto lg:mx-20 mt-10 lg:mb-32  `}>
       <div className=" flex flex-col  lg:w-1/2 xl:w-3/5 lg:pt-0 text-center lg:text-left lg:items-start items-center w-full justify-center">
         <h1 className={`text-gray-800 dark:text-white lg:text-5xl text-3xl lg:mt-28 mt-12  lg:tracking-wider `}>
           <span className="italic font-medium">Request </span>
@@ -29,7 +29,8 @@ export default function Page1() {
              src="/whiteAppleLogo.svg"
              alt="Logistics picture"
              />
-          <p>Get on iPhone</p>
+             <p className=""> Get on iPhone</p>
+         
           </div>
           
         </ButtonColored>
