@@ -14,6 +14,9 @@ interface MainNavProps {
 
 export default function MainNav({ lscreen, Theme, SetTheme }: MainNavProps) {
   const [showMenu, setShowMenu] = useState<boolean>(false);
+  const toggleMenu = () => {
+    setShowMenu(!showMenu);
+  };
 
   const menus = [
     { name: "Delivery", routes: "./" },
@@ -33,14 +36,14 @@ export default function MainNav({ lscreen, Theme, SetTheme }: MainNavProps) {
       >
         <div className="flex ">
           <div className="items-start">
-            <a href="./">
+            <Link href="./">
               <Image
                 src={imagePath}
                 width={178}
                 height={150}
                 alt="profile picture"
               />
-            </a>
+            </Link>
           </div>
           <div className="flex justify-center items-center ">
             {lscreen
@@ -83,9 +86,7 @@ export default function MainNav({ lscreen, Theme, SetTheme }: MainNavProps) {
             !showMenu ? (
               <div
                 className=""
-                onClick={() => {
-                  setShowMenu(!showMenu);
-                }}
+                onClick={toggleMenu}
               >
                 <svg
                   className="cursor-pointer mx-5"
@@ -116,9 +117,7 @@ export default function MainNav({ lscreen, Theme, SetTheme }: MainNavProps) {
             ) : (
               <div
                 className="cursor-pointer mx-5 w-26 h-26"
-                onClick={() => {
-                  setShowMenu(!showMenu);
-                }}
+                onClick={toggleMenu}
               >
                 {" "}
                 <X />{" "}
@@ -129,7 +128,7 @@ export default function MainNav({ lscreen, Theme, SetTheme }: MainNavProps) {
           )}
         </div>
       </div>
-      {showMenu && !lscreen ? <MenuList menus={menus} /> : ""}
+      {showMenu && !lscreen ? <MenuList menus={menus} toggleMenu={toggleMenu}/> : ""}
     </div>
   );
 }
@@ -166,28 +165,36 @@ interface menuitemProps {
 }
 interface menuProps {
   menus: menuitemProps[];
+  toggleMenu:()=>void;
 }
-function MenuList({ menus }: menuProps) {
+function MenuList({ menus,toggleMenu }: menuProps) {
   return (
     <div className="z-50  pt-24 bg-white dark:bg-black flex flex-col p-5 h-screen w-full m-auto items-center fixed ">
       {menus.map((menu) => {
         return (
           <div>
             <div className="p-6">
-              <a href={menu.routes}> {menu.name}</a>
+              <Link
+              onClick={toggleMenu}
+               href={menu.routes}>{menu.name}</Link>
             </div>
           </div>
         );
       })}
       <ButtonColored
+        onClick={toggleMenu}
         as={Link}
         href="/login"
         className={`border border-black text-black dark:bg-dark dark:border-white dark:text-white text-sm rounded-r-lg p-6 w-full mb-6`}
       >
         Login
       </ButtonColored>
-      <ButtonColored className="text-white text-sm bg-red-600 rounded-r-lg p-6 w-full mb-6">
-        {" "}
+      <ButtonColored 
+      onClick={toggleMenu}
+      as={Link}
+      href="/sign-up"
+      className="text-white text-sm bg-red-600 rounded-r-lg p-6 w-full mb-6">
+        
         Sign up
       </ButtonColored>
     </div>
